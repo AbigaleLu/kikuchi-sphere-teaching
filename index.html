@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>菊池球交互模型 · 地址已迁移</title>
+</head>
+<body>
+  <p>菊池球交互模型已迁移，正在前往新地址。<a id="destination" href="https://abigalelu.github.io/kikuchi-sphere-interactive/">点击继续</a></p>
+  <noscript><p>请启用 JavaScript 以保留原链接中的视角和缩放状态，或通过上方链接打开新首页。</p></noscript>
+  <script>
+    (() => {
+      const oldBase='/kikuchi-sphere-teaching';
+      const newBase='https://abigalelu.github.io/kikuchi-sphere-interactive';
+      const path=location.pathname;
+      const suffix=path===oldBase ? '/' : path.startsWith(oldBase+'/') ? path.slice(oldBase.length) : '/';
+      const destination=newBase+suffix+location.search+location.hash;
+      document.getElementById('destination').href=destination;
+      location.replace(destination);
+    })();
+  </script>
+</body>
+</html>
